@@ -269,7 +269,7 @@ main.directive('cytoGraph', ['$window', '$timeout', 'cytoService',
             if(nodes.connectedEdges().targets()[0]._private.data.id === nodes._private.data.id){
               return;
             }
-            $('.message').text("Send " + nodes._private.data.id + " a beer?").toggleClass('hidden');
+            $('.message').text("Click " + nodes._private.data.id + " to send a beer!").toggleClass('hidden');
             if(clickedOnce === true){
               clickedOnce = false;
               cy.elements().forEach(function(element){
